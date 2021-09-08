@@ -1,0 +1,25 @@
+{
+  "name": "image-pdf",
+  "version": "1.2.6",
+  "description": "图片或文字信息转成PDF文件",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "copy:publish": "copyfiles ./index.js ./package.json ./README.md ./publish",
+    "build": "webpack --progress --optimize-minimize & npm run copy:publish"
+  },
+  "dependencies": {
+    "jspdf": "^1.5.3",
+    "jspdf-font": "^1.0.7",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "0.7.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "copyfiles": "^1.2.0",
+    "webpack": "^3.5.3"
+  }
+}
